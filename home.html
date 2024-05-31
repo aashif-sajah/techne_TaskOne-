@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Home</title>
+  </head>
+  <body>
+    <header>    
+        <div class="logo">
+            
+        </div>      <h1>Flower Shop</h1>
+      <nav>
+        <a href="#">Flowers</a>
+        <a href="#">Plants</a>
+        <a href="#">Gifts</a>
+        <a href="#">Same Day</a>
+        <a href="#">Weddings</a>
+        <a href="#" class="sign-in">Sign In</a>
+      </nav>
+    </header>
+    <section class="flower">
+      <img src="flower.jpg" alt="A flower Image" />
+    </section>
+    <div class="flower-text">
+      <h2>This is Nissat GT-R R35</h2>
+      <p>
+        With its dual-clutch and strong turbocharged V-6, combined with an
+        all-wheel-drive system, the 2009 Nissan GT-R was able to rocket to 60 in
+        as little as 3.3 seconds.
+      </p>
+    </div>
+    <section class="contact">
+      <h1>Contact Us</h1>
+      <p>
+        We're here to help! Send us a message and we'll do our best to get back
+        to you within 24 hours.
+      </p>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+        <label for="phone">Phone (optional)</label>
+        <input type="tel" id="phone" name="phone"  placeholder="Enter Your Number"/>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your Messages" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const phone = document.getElementById("phone").value;
+          const message = document.getElementById("message").value;
+
+          console.log("Name:", name);
+          console.log("Email:", email);
+          console.log("Phone:", phone);
+          console.log("Message:", message);
+        });
+    </script>
+  </body>
+</html>
